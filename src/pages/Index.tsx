@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Index = () => {
+  useEffect(() => {
+    console.log("Index mounted");
+  }, []);
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-primary-glow">
       <div className="text-center">
@@ -10,3 +15,4 @@ const Index = () => {
 };
 
 export default Index;
+
