@@ -28,7 +28,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
-    "lovable-tagger": "latest",
+    "lovable-tagger": "^1.1.11",
     "postcss": "latest",
     "tailwindcss": "latest",
     "typescript": "latest",
