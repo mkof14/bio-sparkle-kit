@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Heart, Sparkles, Activity, Brain, Dumbbell, Users, Shield, Droplet, Apple, Moon, Wind, Baby, HeartPulse, Zap, Accessibility, Eye, ShoppingBag, Flame, UserCircle, UserCircle2 } from "lucide-react";
-
 const categories = [
   { name: "Critical Health", services: 12, icon: Heart, description: "Advanced diagnostics for life-critical conditions with AI-powered cardiac and emergency monitoring." },
   { name: "Everyday Wellness", services: 15, icon: Sparkles, description: "Daily health optimization through personalized insights and lifestyle metrics." },
