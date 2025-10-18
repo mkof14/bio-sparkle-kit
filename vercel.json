@@ -1,8 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/((?!assets|favicon\\.ico|robots\\.txt|sitemap\\.xml|.*\\.(css|js|mjs|map|png|jpg|jpeg|svg|webp|ico|txt)).*)",
-      "destination": "/"
-    }
+    { "source": "/:path*", "destination": "/" }
   ]
 }
