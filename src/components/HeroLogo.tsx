@@ -8,7 +8,7 @@ export default function HeroLogo() {
     const { data } = supabase
       .storage
       .from("public-files")
-      .getPublicUrl("logo.png");
+      .getPublicUrl("bmCore 111.png");
     setUrl(data.publicUrl);
   }, []);
 
