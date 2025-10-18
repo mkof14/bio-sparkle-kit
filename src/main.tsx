@@ -1,13 +1,18 @@
-import HeroLogo from "./components/HeroLogo";
-import HeroLogo from "./components/HeroLogo";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <HeroLogo />
-    <><HeroLogo /><App /></>
-  </StrictMode>
+console.log("BOOT: main.tsx loaded");
+
+const el = document.getElementById("root");
+if (!el) {
+  const div = document.createElement("div");
+  div.id = "root";
+  document.body.appendChild(div);
+}
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
 );

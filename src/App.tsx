@@ -1,10 +1,8 @@
-import HeroLogo from "./components/HeroLogo";
-
 export default function App() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen gap-10">
-      <HeroLogo />
-      <h1 className="text-3xl font-bold">Welcome to Bio Sparkle Kit</h1>
+    <main style={{minHeight:"100vh",display:"flex",flexDirection:"column",gap:16,alignItems:"center",justifyContent:"center"}}>
+      <div style={{fontSize:20}}>It works</div>
+      <img src="https://swbexijaawnfnxigzuke.supabase.co/storage/v1/object/public/public-files/bmCore%20111.png" alt="logo" style={{height:120}} />
     </main>
   );
 }
