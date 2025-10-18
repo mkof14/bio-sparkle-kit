@@ -1,15 +1,23 @@
-import { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import CategoryGrid from "@/components/CategoryGrid";
+import SecondOpinion from "@/components/SecondOpinion";
+import StatsSection from "@/components/StatsSection";
+import ModelArchive from "@/components/ModelArchive";
+import AdvantagesSection from "@/components/AdvantagesSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
-  useEffect(() => {
-    console.log("Index mounted");
-  }, []);
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary to-primary-glow">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-4">Bio Sparkle Kit</h1>
-        <p className="text-white/80">Готов к развертыванию на Vercel</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <Hero />
+      <CategoryGrid />
+      <SecondOpinion />
+      <StatsSection />
+      <ModelArchive />
+      <AdvantagesSection />
+      <Footer />
     </div>
   );
 };
