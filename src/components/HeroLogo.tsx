@@ -11,11 +11,10 @@ export default function HeroLogo() {
     setUrl(data.publicUrl);
   }, []);
 
-  if (!url) return <div className="p-6 text-center text-sm">...</div>;
+  if (!url) return null;
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-10">
-      <div className="text-xs break-all max-w-[90vw] px-4">{url}</div>
+    <div className="flex items-center justify-center">
       <img src={url} alt="Logo" className="h-40 w-auto" />
     </div>
   );

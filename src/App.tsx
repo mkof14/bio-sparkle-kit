@@ -1,8 +1,11 @@
+import HeroLogo from "./components/HeroLogo";
+
 export default function App() {
   return (
-    <main style={{minHeight:"100vh",display:"flex",flexDirection:"column",gap:16,alignItems:"center",justifyContent:"center"}}>
-      <div style={{fontSize:20}}>It works</div>
-      <img src="https://swbexijaawnfnxigzuke.supabase.co/storage/v1/object/public/public-files/bmCore%20111.png" alt="logo" style={{height:120}} />
+    <main className="min-h-screen flex flex-col items-center justify-center gap-8">
+      <h1 className="text-4xl font-semibold">Bio Sparkle Kit</h1>
+      <p className="text-neutral-500">Готов к развертыванию на Vercel</p>
+      <HeroLogo />
     </main>
   );
 }
